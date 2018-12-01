@@ -6,6 +6,7 @@ public class Unit : MonoBehaviour {
 
   public float movementSmoothing = 1.0f;
   public float speed = 2f;
+  public int hp = 3;
 
   protected Animator animator;
   protected Rigidbody2D rb;
@@ -50,6 +51,8 @@ public class Unit : MonoBehaviour {
 
   protected void UpdateVelocity() {
 
+    if (hp == 0) return;
+
     Vector2 direction = GetDirectionVector();
     Vector2 desiredVelocity = direction * speed;
     Vector2 actualVelocity = Vector2.Lerp(currentVelocity, desiredVelocity, 1 / movementSmoothing * Time.deltaTime);
@@ -85,11 +88,28 @@ public class Unit : MonoBehaviour {
 
   }
 
+  void OnDeath() {
+
+    animator.SetBool("dead", true);
+  }
+
+  void OnHit() {
+
+    Debug.Log("I'm hit!");
+    if (hp > 0) {
+      hp -= 1;
+      if (hp == 0) {
+        OnDeath();
+      }
+    }
+  }
+
   public void OnCollisionEnter2D(Collision2D collision) {
     if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Fireball")) {
       GameObject projectile = collision.collider.gameObject;
 
       rb.AddForce(projectile.transform.forward * 2000);
+      OnHit();
     }
   }
 

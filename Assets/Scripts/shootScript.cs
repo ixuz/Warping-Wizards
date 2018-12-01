@@ -26,7 +26,6 @@ public class shootScript : MonoBehaviour {
         Vector3 mousePos = Input.mousePosition;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
         mousePos.z = 0;
-        Debug.Log(mousePos);
 
         // position
         direction = mousePos - Aim.position;

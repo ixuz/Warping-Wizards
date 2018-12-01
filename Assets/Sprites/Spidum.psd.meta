@@ -10,6 +10,9 @@ TextureImporter:
     21300010: Spidum_5
     21300012: Spidum_6
     21300014: Spidum_7
+    21300016: Spidum_8
+    21300018: Spidum_9
+    21300020: Spidum_10
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -139,7 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86503eb1c1f05da479f9b9a5b86e463b
+      spriteID: a74ca6818ef02d549b0713f13caee2ec
       vertices: []
       indices: 
       edges: []
@@ -159,7 +162,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab574af885d6f5446a808263531f6e15
+      spriteID: de13afc75344a4e4c9361272b26e0373
       vertices: []
       indices: 
       edges: []
@@ -179,7 +182,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67034f6ac7e48e14baff8d1fc1846f16
+      spriteID: 2f88fc5b2f621a14a8646246839b971c
       vertices: []
       indices: 
       edges: []
@@ -199,7 +202,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36a01a7f7802196469b9131f177a532f
+      spriteID: 058a98b3f46daa847b70d15554ad606e
       vertices: []
       indices: 
       edges: []
@@ -219,7 +222,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 536af808dde8b9047922dd4b494739ec
+      spriteID: 668e3a90c7540b847baa02c51bd8f7dd
       vertices: []
       indices: 
       edges: []
@@ -239,7 +242,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbf0d23bb7a2fc34f83d4a9dce7be03b
+      spriteID: 1508803381e95644bbd96c523ecaa2f0
       vertices: []
       indices: 
       edges: []
@@ -259,7 +262,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b222296ef96608408683a0745604a9f
+      spriteID: 6940788fa07d4354480fd84c513d4529
       vertices: []
       indices: 
       edges: []
@@ -279,7 +282,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 847432a22144a36498f8eea11dc3d306
+      spriteID: bdf9859625dfc5c478cbaa33132203d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spidum_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71d7f845aec08f42b1f0dcb0e59f8cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spidum_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8717143faadd3b349a1ecf1f2a1d2700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spidum_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6f722e27566e54891c916c8d96000b
       vertices: []
       indices: 
       edges: []
