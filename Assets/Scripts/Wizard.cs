@@ -1,44 +1,40 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Wizard : MonoBehaviour {
 
-  public float speed = 1.0f;
+    public Animator animator;
+    public Rigidbody2D rb;
+    public float movementSmoothing = 1.0f;
+    public float speed = 2f;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    private Vector2 currentVelocity;
 
-    Vector2 pos = transform.position;
-    Vector2 input = GetInput();
-    input.Normalize();
+    // Update is called once per frame
+    void Update () {
 
-    pos += input * speed * Time.deltaTime;
+        // Handle inputs
+        Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+        Vector2 desiredVelocity = input * speed;
 
-    transform.position = pos;
-  }
+        Vector2 actualVelocity = Vector2.Lerp(currentVelocity, desiredVelocity, 1/movementSmoothing * Time.deltaTime);
+        rb.velocity = actualVelocity;
 
-  Vector2 GetInput() {
+        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space)) {
+            //Interact();
+        }
+        currentVelocity = rb.velocity;
 
-    Vector2 input = Vector2.zero;
-    if (Input.GetKey(KeyCode.A)) {
-      input += -Vector2.right;
+        animator.SetFloat("velocity", currentVelocity.magnitude);
+        if (currentVelocity.x > 0) {
+            animator.SetBool("facing_right", true);
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        if (currentVelocity.x < 0) {
+            animator.SetBool("facing_right", false);
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
     }
-    if (Input.GetKey(KeyCode.D)) {
-      input += Vector2.right;
-    }
-    if (Input.GetKey(KeyCode.W)) {
-      input += Vector2.up;
-    }
-    if (Input.GetKey(KeyCode.S)) {
-      input += -Vector2.up;
-    }
-
-    return input;
-  }
 }
