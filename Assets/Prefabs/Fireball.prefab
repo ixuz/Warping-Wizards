@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 512886048263869117}
   - component: {fileID: 7979810669059201697}
+  - component: {fileID: 7267731626804215269}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Untagged
@@ -29,6 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 512886048832465741}
+  - {fileID: 3426940506297878343}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -42,12 +44,29 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.13620427
+--- !u!114 &7267731626804215269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512886048263869116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1298f4472945ac44c9be6706af1b1cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ThisObject: {fileID: 512886048263869116}
+  Speed: 8
+  ExplodePoint: {fileID: 0}
+  SpawnPoint: {fileID: 3426940506297878343}
+  RocketTime: 10
 --- !u!1 &512886048364954871
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,13 +91,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512886048364954871}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 512886048832465741}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &512886048364954865
 TrailRenderer:
   serializedVersion: 2
@@ -125,31 +144,22 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.30087662
+        value: 0.36185455
         inSlope: Infinity
-        outSlope: -0.23807071
+        outSlope: -0.36185455
         tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.98167
       - serializedVersion: 3
-        time: 0.4460286
-        value: 0.19469027
-        inSlope: -0.23807071
+        time: 1
+        value: 0
+        inSlope: -0.36185455
         outSlope: -0.34276888
         tangentMode: 5
         weightedMode: 0
         inWeight: 1
         outWeight: 1
-      - serializedVersion: 3
-        time: 0.75179464
-        value: 0
-        inSlope: -0.64947736
-        outSlope: 0
-        tangentMode: 1
-        weightedMode: 0
-        inWeight: 0.9938324
-        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1050,7 +1060,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 20
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1107,7 +1117,7 @@ ParticleSystem:
     curve:
       serializedVersion: 2
       minMaxState: 1
-      scalar: 1
+      scalar: 2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -2696,7 +2706,7 @@ ParticleSystem:
     strength:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.44
+      scalar: 0.93
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4815,3 +4825,33 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!1 &720874300292916191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3426940506297878343}
+  m_Layer: 0
+  m_Name: Explosion Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3426940506297878343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720874300292916191}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 512886048263869117}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
