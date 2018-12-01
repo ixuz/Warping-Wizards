@@ -9,14 +9,23 @@ public class shootScript : MonoBehaviour {
     public GameObject Fireball;
     Vector2 direction;
 
+    public float CoolDown;
+    public float CoolDownTime;
+
+    private void Start()
+    {
+        CoolDown = CoolDownTime;
+    }
+
     void Update()
     {
 
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && CoolDown < 0)
         {
             fire();
         }
+        CoolDown = CoolDown - Time.deltaTime;
 
     }
 
@@ -31,5 +40,6 @@ public class shootScript : MonoBehaviour {
         direction = mousePos - Aim.position;
         direction.Normalize();
         Instantiate(Fireball, Aim.position, Quaternion.LookRotation(direction));
+        CoolDown = CoolDownTime;
     }
 }
