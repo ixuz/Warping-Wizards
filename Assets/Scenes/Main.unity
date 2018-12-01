@@ -153,6 +153,18 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 100
+--- !u!1 &432042655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2530534937670641472, guid: 55faacdb654bd674b8d53303c8fe2356,
+    type: 3}
+  m_PrefabInstance: {fileID: 177960972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &999212707 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2530534937670641474, guid: 55faacdb654bd674b8d53303c8fe2356,
+    type: 3}
+  m_PrefabInstance: {fileID: 177960972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5796,6 +5808,24 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!1 &1709901098 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1874428521397443927, guid: 40b060d93ac3f2d4e81f1622c91d19a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 872632193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1709901099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709901098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48d1a98f8602474993c7330f1780397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1798623886
 GameObject:
   m_ObjectHideFlags: 0
@@ -7376,12 +7406,6 @@ TilemapRenderer:
   m_SortOrder: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!4 &999212707 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2530534937670641474, guid: 55faacdb654bd674b8d53303c8fe2356,
-    type: 3}
-  m_PrefabInstance: {fileID: 177960972}
-  m_PrefabAsset: {fileID: 0}
 --- !u!29 &1
 OcclusionCullingSettings:
   m_ObjectHideFlags: 0
@@ -7561,11 +7585,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wizard
       objectReference: {fileID: 0}
-    - target: {fileID: 2530534937670641484, guid: 55faacdb654bd674b8d53303c8fe2356,
-        type: 3}
-      propertyPath: m_LinearDrag
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55faacdb654bd674b8d53303c8fe2356, type: 3}
 --- !u!1001 &872632193
@@ -7634,5 +7653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spidum
       objectReference: {fileID: 0}
+    - target: {fileID: 1874428521397443931, guid: 40b060d93ac3f2d4e81f1622c91d19a8,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 432042655}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40b060d93ac3f2d4e81f1622c91d19a8, type: 3}

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2530534937670641485}
   - component: {fileID: 2530534937670641475}
   - component: {fileID: 739435229685330279}
+  - component: {fileID: 432042656}
   m_Layer: 0
   m_Name: Wizard
   m_TagString: Player
@@ -68,7 +69,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 10
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -153,6 +154,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.2523169}
   m_Size: {x: 0.6680589, y: 0.8296789}
   m_Direction: 0
+--- !u!114 &432042656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2530534937670641472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48d1a98f8602474993c7330f1780397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6345107993453375512
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +212,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Aim: {fileID: 5084882931208668267}
+  FireSpawnpoint: {fileID: 0}
+  FieAim: {fileID: 0}
   Dir: 0
+  Fireball: {fileID: 512886048263869116, guid: 5ea38af2024aad74db7067b4fd2638bc, type: 3}
 --- !u!1 &8004012304990867825
 GameObject:
   m_ObjectHideFlags: 0
