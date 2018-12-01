@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class Wizard : MonoBehaviour {
+public class Spidum : MonoBehaviour {
 
   public Animator animator;
   public Rigidbody2D rb;
@@ -13,13 +13,13 @@ public class Wizard : MonoBehaviour {
   private Vector2 currentVelocity;
 
   // Update is called once per frame
-  void Update () {
+  void Update() {
 
     // Handle inputs
     Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
     Vector2 desiredVelocity = input * speed;
 
-    Vector2 actualVelocity = Vector2.Lerp(currentVelocity, desiredVelocity, 1/movementSmoothing * Time.deltaTime);
+    Vector2 actualVelocity = Vector2.Lerp(currentVelocity, desiredVelocity, 1 / movementSmoothing * Time.deltaTime);
     rb.velocity = actualVelocity;
 
     if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space)) {
