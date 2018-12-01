@@ -41,5 +41,7 @@ public class shootScript : MonoBehaviour {
         direction.Normalize();
         Instantiate(Fireball, Aim.position, Quaternion.LookRotation(direction));
         CoolDown = CoolDownTime;
+
+        CameraShaker.instance.ShakeOnce(0.2f);
     }
 }

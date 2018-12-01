@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 90779586}
   - component: {fileID: 90779585}
-  - component: {fileID: 90779587}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -70,18 +69,6 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 108421157}
---- !u!114 &90779587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 90779584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a71bea0b4aea3241ae5d2cd6a717d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &108421156
 GameObject:
   m_ObjectHideFlags: 3
@@ -180,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
-  m_AmplitudeGain: 1.4
+  m_AmplitudeGain: 0
   m_FrequencyGain: 0.14
   mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &432042655 stripped
@@ -5793,6 +5780,53 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+--- !u!1 &931851449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 931851451}
+  - component: {fileID: 931851450}
+  m_Layer: 0
+  m_Name: CameraShaker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &931851451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931851449}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.06999758, y: -0.52247906, z: -0.07264631}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &931851450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931851449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a71bea0b4aea3241ae5d2cd6a717d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 0.3
+  shakeAmplitude: 1.2
+  shakeFrequency: 2
+  virtualCamera: {fileID: 90779585}
 --- !u!1 &1013703398
 GameObject:
   m_ObjectHideFlags: 0

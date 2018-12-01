@@ -101,8 +101,8 @@ public class Unit : MonoBehaviour {
 
   void OnHit() {
 
-    Debug.Log("I'm hit!");
     if (hp > 0) {
+      CameraShaker.instance.ShakeOnce(0.2f);
       hp -= 1;
       if (hp == 0) {
         OnDeath();

@@ -20,8 +20,9 @@ public class FireballScript : MonoBehaviour {
 
     public void OnCollisionEnter2D(Collision2D coll)
     {
-            Instantiate(Explode, SpawnPoint.position, SpawnPoint.rotation);
-                Destroy(ThisObject, 0);
+      Instantiate(Explode, SpawnPoint.position, SpawnPoint.rotation);
+      Destroy(ThisObject, 0);
+      CameraShaker.instance.ShakeOnce(0.2f);
 
-    }
+  }
 }
