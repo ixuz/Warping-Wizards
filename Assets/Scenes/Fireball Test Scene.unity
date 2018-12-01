@@ -1,17 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!4 &98001087 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4732605126312462582, guid: 55faacdb654bd674b8d53303c8fe2356,
-    type: 3}
-  m_PrefabInstance: {fileID: 1104714274}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &758969958 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6749735670361201354, guid: 55faacdb654bd674b8d53303c8fe2356,
-    type: 3}
-  m_PrefabInstance: {fileID: 1104714274}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1306991654
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +93,7 @@ GameObject:
   - component: {fileID: 1741098437}
   - component: {fileID: 1741098436}
   - component: {fileID: 1741098438}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -631,12 +619,12 @@ PrefabInstance:
         type: 3}
       propertyPath: FireSpawnpoint
       value: 
-      objectReference: {fileID: 758969958}
+      objectReference: {fileID: 0}
     - target: {fileID: 8260777921596924525, guid: 55faacdb654bd674b8d53303c8fe2356,
         type: 3}
       propertyPath: FieAim
       value: 
-      objectReference: {fileID: 98001087}
+      objectReference: {fileID: 0}
     - target: {fileID: 8260777921596924525, guid: 55faacdb654bd674b8d53303c8fe2356,
         type: 3}
       propertyPath: Fireball

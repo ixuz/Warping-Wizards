@@ -66,6 +66,7 @@ MonoBehaviour:
   ThisObject: {fileID: 512886048263869116}
   Speed: 8
   SpawnPoint: {fileID: 3426940506297878343}
+  Explode: {fileID: 8655486746878747434, guid: e784ff4f47e7de24788811e858578882, type: 3}
 --- !u!50 &4598285038251033203
 Rigidbody2D:
   serializedVersion: 4

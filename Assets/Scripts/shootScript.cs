@@ -5,18 +5,19 @@ using UnityEngine;
 public class shootScript : MonoBehaviour {
 
     public Transform Aim;
-    public Transform FireSpawnpoint;
-    public Transform FieAim;
     public int Dir;
     public GameObject Fireball;
+    Vector2 direction;
 
     void Update()
     {
+
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             fire();
         }
+
     }
 
     public void fire()
@@ -28,9 +29,8 @@ public class shootScript : MonoBehaviour {
         Debug.Log(mousePos);
 
         // position
-        Vector3 direction = mousePos - Aim.position;
+        direction = mousePos - Aim.position;
         direction.Normalize();
-
         Instantiate(Fireball, Aim.position, Quaternion.LookRotation(direction));
     }
 }
