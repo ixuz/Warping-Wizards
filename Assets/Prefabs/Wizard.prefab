@@ -151,10 +151,10 @@ Rigidbody2D:
   m_LinearDrag: 10
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 99e46c134bca12e42839b5ed1e4cbb1d, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &2530534937670641485
 MonoBehaviour:
@@ -170,6 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSmoothing: 0.05
   speed: 5
+  hp: 3
 --- !u!212 &2530534937670641475
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -205,7 +206,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 186958a6878475749814fb53fe0f30c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -291,3 +292,5 @@ MonoBehaviour:
   Aim: {fileID: 5084882931208668267}
   Dir: 0
   Fireball: {fileID: 512886048263869116, guid: 5ea38af2024aad74db7067b4fd2638bc, type: 3}
+  CoolDown: 0.6
+  CoolDownTime: 0.6
