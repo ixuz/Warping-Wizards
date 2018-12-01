@@ -116,7 +116,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSmoothing: 0.05
   speed: 2
+  hp: 3
   attack: {fileID: 0}
+  deathEffectPrefab: {fileID: 3539488020610134378, guid: cf453d6736517a74e983b71b028d488c,
+    type: 3}
 --- !u!50 &1874428521397443929
 Rigidbody2D:
   serializedVersion: 4

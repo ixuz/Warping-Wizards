@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour {
 
+  public GameObject deathEffectPrefab;
   public float movementSmoothing = 1.0f;
   public float speed = 2f;
   public int hp = 3;
@@ -92,6 +93,10 @@ public class Unit : MonoBehaviour {
 
     animator.SetBool("dead", true);
     Destroy(GetComponent<Collider2D>());
+
+    if (deathEffectPrefab) {
+      Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
+    }
   }
 
   void OnHit() {
