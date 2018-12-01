@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class Spidum : Unit {
+public class Skeletor : Unit {
 
   public GameObject attack;
 
   void Start() {
 
-    fsm.AddStateName("Spin");
+    fsm.AddStateName("Magic");
 
     attack = GameObject.FindGameObjectWithTag("Player");
 
