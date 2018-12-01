@@ -7,16 +7,25 @@ public class Unit : MonoBehaviour {
   public float movementSmoothing = 1.0f;
   public float speed = 2f;
 
-  private Animator animator;
-  private Rigidbody2D rb;
+  protected Animator animator;
+  protected Rigidbody2D rb;
+  protected Fsm fsm;
   private Vector2 currentVelocity;
 
   private Transform follow;
   private Vector2 input;
 
+
   void Awake() {
     animator = GetComponent<Animator>();
     rb = GetComponent<Rigidbody2D>();
+    fsm = GetComponent<Fsm>();
+
+    fsm.AddStateName("Idle");
+    fsm.AddStateName("Run");
+  }
+
+  void Start() {
   }
 
   public void SetInput(Vector2 input) {
@@ -25,6 +34,18 @@ public class Unit : MonoBehaviour {
 
   public void SetFollow(Transform follow) {
     this.follow = follow;
+  }
+
+  public bool IsFollowing(Transform transform) {
+    return (follow == transform);
+  }
+
+  public bool IsFollowing() {
+    return follow;
+  }
+
+  public Transform GetFollowing() {
+    return follow;
   }
 
   protected void UpdateVelocity() {
@@ -58,5 +79,17 @@ public class Unit : MonoBehaviour {
       direction = input;
     }
     return direction;
+  }
+
+  void OnFsmStateChangeEvent(GameObject go, Fsm fsm, string stateName) {
+
+  }
+
+  protected virtual void OnEnable() {
+    Fsm.OnFsmStateChangeEvent += OnFsmStateChangeEvent;
+  }
+
+  protected virtual void OnDisable() {
+    Fsm.OnFsmStateChangeEvent -= OnFsmStateChangeEvent;
   }
 }
