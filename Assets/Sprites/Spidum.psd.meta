@@ -13,6 +13,14 @@ TextureImporter:
     21300016: Spidum_8
     21300018: Spidum_9
     21300020: Spidum_10
+    21300022: Spidum_11
+    21300024: Spidum_12
+    21300026: Spidum_13
+    21300028: Spidum_14
+    21300030: Spidum_15
+    21300032: Spidum_16
+    21300034: Spidum_17
+    21300036: Spidum_18
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -142,7 +150,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a74ca6818ef02d549b0713f13caee2ec
+      spriteID: d928eaef73f130d43a3004a8a7d06923
       vertices: []
       indices: 
       edges: []
@@ -162,7 +170,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de13afc75344a4e4c9361272b26e0373
+      spriteID: d13f6f8d0818da24bb72014a70546a8b
       vertices: []
       indices: 
       edges: []
@@ -182,7 +190,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f88fc5b2f621a14a8646246839b971c
+      spriteID: e1509d1c9cedfd04f862b8b9aeaee6e5
       vertices: []
       indices: 
       edges: []
@@ -202,7 +210,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 058a98b3f46daa847b70d15554ad606e
+      spriteID: d5e196a847929a64bbc277b1205e24d2
       vertices: []
       indices: 
       edges: []
@@ -222,7 +230,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 668e3a90c7540b847baa02c51bd8f7dd
+      spriteID: a81de34dabdbc7b4eace06af532ae3c2
       vertices: []
       indices: 
       edges: []
@@ -242,7 +250,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1508803381e95644bbd96c523ecaa2f0
+      spriteID: ce1de9d53b68cfd448d060aeec71b96e
       vertices: []
       indices: 
       edges: []
@@ -262,7 +270,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6940788fa07d4354480fd84c513d4529
+      spriteID: 09e1cfa85824d294d88fba4dd7fa9cab
       vertices: []
       indices: 
       edges: []
@@ -282,7 +290,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdf9859625dfc5c478cbaa33132203d3
+      spriteID: f91bfb9eec6b2ed489cb0fd5eb7e0e08
       vertices: []
       indices: 
       edges: []
@@ -302,7 +310,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c71d7f845aec08f42b1f0dcb0e59f8cb
+      spriteID: 011c951d4aeaaae4a85025ecceee6ab7
       vertices: []
       indices: 
       edges: []
@@ -322,7 +330,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8717143faadd3b349a1ecf1f2a1d2700
+      spriteID: 69e8a4b4956f21149989eb7df91a8c63
       vertices: []
       indices: 
       edges: []
@@ -342,7 +350,167 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd6f722e27566e54891c916c8d96000b
+      spriteID: 1bc84cd5eae643945b9b310a6e465180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spidum_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24302ebecc043146af3f26b5149cba9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spidum_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1afe76b86abbe5459ec2be4745f3dcc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spidum_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b46fea0baaba64d84fbd1ce55b6640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spidum_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9335a2b31ce534480b6fb477c3677e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spidum_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213bac7cf64346e4e96d974e85956776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spidum_16
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e224dceafa72064f95a6a33ac6541f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spidum_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbbd84226478a14ab779da398c759e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spidum_18
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a400c99c6c2164d4d808bbdd67908acf
       vertices: []
       indices: 
       edges: []
