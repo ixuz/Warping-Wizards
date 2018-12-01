@@ -85,6 +85,14 @@ public class Unit : MonoBehaviour {
 
   }
 
+  public void OnCollisionEnter2D(Collision2D collision) {
+    if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Fireball")) {
+      GameObject projectile = collision.collider.gameObject;
+
+      rb.AddForce(projectile.transform.forward * 2000);
+    }
+  }
+
   protected virtual void OnEnable() {
     Fsm.OnFsmStateChangeEvent += OnFsmStateChangeEvent;
   }
