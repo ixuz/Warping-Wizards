@@ -91,6 +91,7 @@ public class Unit : MonoBehaviour {
   void OnDeath() {
 
     animator.SetBool("dead", true);
+    Destroy(GetComponent<Collider2D>());
   }
 
   void OnHit() {
