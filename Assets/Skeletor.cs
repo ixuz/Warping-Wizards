@@ -6,6 +6,8 @@ using System.Linq;
 public class Skeletor : Unit {
 
   public GameObject attack;
+  public GameObject magicPrefab;
+  public Transform magicSpawnPoint;
 
   void Start() {
 
@@ -33,16 +35,15 @@ public class Skeletor : Unit {
 
   void OnFsmStateChangeEvent(GameObject go, Fsm fsm, string stateName) {
     if (go == gameObject) {
-      Debug.Log("Fsm changed to " + stateName + "!");
-
       switch (stateName) {
         case "Idle":
           SetFollow(attack.transform);
           break;
         case "Run":
           break;
-        case "Spin":
+        case "Magic":
           SetFollow(null);
+          StartCoroutine(delayedMagicSpawn());
           break;
         
       }
@@ -57,5 +58,21 @@ public class Skeletor : Unit {
   protected override void OnDisable() {
     base.OnEnable();
     Fsm.OnFsmStateChangeEvent -= OnFsmStateChangeEvent;
+  }
+
+  IEnumerator delayedMagicSpawn() {
+    yield return new WaitForSeconds(0.5f);
+
+    // mouse pos
+    // position
+    Vector2 direction = attack.transform.position - magicSpawnPoint.position;
+    direction.Normalize();
+
+    if (hp > 0) {
+      if (magicPrefab) {
+        Instantiate(magicPrefab, magicSpawnPoint.position, Quaternion.LookRotation(direction));
+      }
+    }
+    yield return null;
   }
 }
