@@ -157,7 +157,7 @@ MonoBehaviour:
   speed: 1
   hp: 3
   attack: {fileID: 0}
-  magicPrefab: {fileID: 512886048263869116, guid: 5ea38af2024aad74db7067b4fd2638bc,
+  magicPrefab: {fileID: 6758012032838442993, guid: 677b3b5e675062744bd0eb48aa869fff,
     type: 3}
   magicSpawnPoint: {fileID: 4900452906839889550}
 --- !u!114 &3213887431392983357
