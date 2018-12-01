@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2530534937670641475}
   - component: {fileID: 739435229685330279}
   - component: {fileID: 432042656}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wizard
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5084882931208668267}
   - component: {fileID: 8260777921596924525}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Aim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6749735670361201354}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FireSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4732605126312462582}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FireAim
   m_TagString: Untagged
   m_Icon: {fileID: 0}

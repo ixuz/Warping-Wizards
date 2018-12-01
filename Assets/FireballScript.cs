@@ -6,7 +6,7 @@ public class FireballScript : MonoBehaviour {
 
     public GameObject ThisObject;
     public float Speed = 2f;
-    public Transform ExplodePoint;
+    //public Transform ExplodePoint;
     public Transform SpawnPoint;
 
     private void Start()
@@ -26,7 +26,7 @@ public class FireballScript : MonoBehaviour {
     public void OnCollisionEnter2D(Collision2D coll)
     {
             Debug.Log("hit 1");
-            Instantiate(ExplodePoint, SpawnPoint.position, SpawnPoint.rotation);
+            //Instantiate(ExplodePoint, SpawnPoint.position, SpawnPoint.rotation);
                 Destroy(ThisObject, 0);
 
     }

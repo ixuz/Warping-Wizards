@@ -13,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Fireballcollider
+  - NotFireballcollider
+  - Fireball
   - 
   - 
   - 
