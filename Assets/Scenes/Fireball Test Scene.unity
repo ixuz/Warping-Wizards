@@ -629,7 +629,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Fireball
       value: 
-      objectReference: {fileID: 512886048263869116, guid: 5ea38af2024aad74db7067b4fd2638bc,
+      objectReference: {fileID: 6758012032838442993, guid: 677b3b5e675062744bd0eb48aa869fff,
         type: 3}
     - target: {fileID: 8260777921596924525, guid: 55faacdb654bd674b8d53303c8fe2356,
         type: 3}
