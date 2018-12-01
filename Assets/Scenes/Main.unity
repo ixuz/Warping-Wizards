@@ -165,18 +165,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 177960972}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &432042656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 432042655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b48d1a98f8602474993c7330f1780397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -7596,11 +7584,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wizard
-      objectReference: {fileID: 0}
-    - target: {fileID: 2530534937670641484, guid: 55faacdb654bd674b8d53303c8fe2356,
-        type: 3}
-      propertyPath: m_LinearDrag
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55faacdb654bd674b8d53303c8fe2356, type: 3}
