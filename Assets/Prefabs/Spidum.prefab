@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1874428521397443929}
   - component: {fileID: 1874428521397443928}
   - component: {fileID: 1709901099}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spidum
   m_TagString: Untagged
   m_Icon: {fileID: 0}

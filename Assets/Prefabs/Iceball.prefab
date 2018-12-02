@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 250859534692099925}
   - component: {fileID: 3289443916359361228}
   - component: {fileID: 6864565299954841615}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: TrailParticle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4848,5 +4848,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 902906827887578404, guid: 0838d2c2a7951a04f9212fda068b7637,
         type: 3}
+    - target: {fileID: 512886048263869116, guid: 5ea38af2024aad74db7067b4fd2638bc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 512886048832465740, guid: 5ea38af2024aad74db7067b4fd2638bc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 512886048364954871, guid: 5ea38af2024aad74db7067b4fd2638bc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 720874300292916191, guid: 5ea38af2024aad74db7067b4fd2638bc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033186708690944984, guid: 5ea38af2024aad74db7067b4fd2638bc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ea38af2024aad74db7067b4fd2638bc, type: 3}
