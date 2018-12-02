@@ -6,6 +6,7 @@ using System.Linq;
 public class Spidum : Unit {
 
   public GameObject attack;
+  public GameObject attackTrigger;
 
   void Start() {
 
@@ -41,6 +42,7 @@ public class Spidum : Unit {
         case "Run":
           break;
         case "Spin":
+          Instantiate(attackTrigger, transform.position, transform.rotation);
           AudioManager.instance.PlaySfx("SpidumOnSpin");
           SetFollow(null);
           break;
