@@ -40,4 +40,10 @@ public class Heart : MonoBehaviour {
       Destroy(gameObject);
     }
   }
+
+  public void OnTriggerEnter2D(Collider2D collider) {
+    if (collider.gameObject.tag == "Player") {
+      Destroy(gameObject);
+    }
+  }
 }

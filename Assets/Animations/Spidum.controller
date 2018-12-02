@@ -144,9 +144,12 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFollowing
+    m_EventTreshold: 0
   - m_ConditionMode: 4
     m_ConditionEvent: isFollowingDistance
-    m_EventTreshold: 1
+    m_EventTreshold: 1.25
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102271463356909350}
   m_Solo: 0
@@ -219,6 +222,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isFollowing
+    m_EventTreshold: 0
   - m_ConditionMode: 4
     m_ConditionEvent: isFollowingDistance
     m_EventTreshold: 1

@@ -24,6 +24,10 @@ public class Wizard : Unit {
   public override void OnTriggerEnter2D(Collider2D collider) {
     base.OnTriggerEnter2D(collider);
 
+    if (collider.gameObject.tag == "AOE") {
+      OnHit();
+    }
+
     if (collider.gameObject.tag == "Heart") {
       if (hp < 3) {
         hp += 1;

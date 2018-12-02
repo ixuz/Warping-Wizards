@@ -17,6 +17,7 @@ public class SoulsBar : MonoBehaviour {
 	void Update () {
     int targetSouls = 50 + 25 * State.instance.difficultyLevel;
     float percent = (float)arenaState.souls / (float)targetSouls;
+    percent = Mathf.Clamp(percent, 0f, 1f);
     bar.sizeDelta = new Vector2(maxHealthWidth * percent, 16);
   }
 }

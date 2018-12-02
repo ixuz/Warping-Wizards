@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2746755187338563811}
   - component: {fileID: 2746755187338563808}
   - component: {fileID: 2746755187338563809}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Heart
   m_TagString: Heart
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 741992503ea5e7940a4eed0730d4c4e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectionRange: 4
+  collectionRange: 2
   acceleration: 1
   moveSpeed: 0
 --- !u!58 &2746755187338563809

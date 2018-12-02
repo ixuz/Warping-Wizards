@@ -100,11 +100,11 @@ public class Unit : MonoBehaviour {
     if (deathEffectPrefab) {
       Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
     }
-    if (spawnPrefabOnDeath) {
-      Instantiate(spawnPrefabOnDeath, transform.position, Quaternion.identity);
+    if (spawnPrefabOnDeath && Random.Range(0.0f, 1.0f) > 0.5f) {
+      //Instantiate(spawnPrefabOnDeath, transform.position + new Vector3(Random.Range(-0.25f, 0.25f), Random.Range(-0.25f, 0.25f)), Quaternion.identity);
     }
     if (soulPrefab) {
-      Instantiate(soulPrefab, transform.position, Quaternion.identity);
+      Instantiate(soulPrefab, transform.position + new Vector3(Random.Range(-0.25f, 0.25f), Random.Range(-0.25f, 0.25f)), Quaternion.identity);
     }
   }
 
@@ -128,9 +128,7 @@ public class Unit : MonoBehaviour {
   }
 
   public virtual void OnTriggerEnter2D(Collider2D other) {
-    if (other.gameObject.tag == "AOE") {
-      OnHit();
-    }
+
   }
 
   protected virtual void OnEnable() {

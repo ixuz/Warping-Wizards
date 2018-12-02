@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 739435229685330279}
   - component: {fileID: 432042656}
   - component: {fileID: 3577582873684595869}
+  - component: {fileID: 2328174058104976685}
   m_Layer: 0
   m_Name: Wizard
   m_TagString: Player
@@ -168,10 +169,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e846a265b6540428e7df25f63cf421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnPrefabOnDeath: {fileID: 0}
   deathEffectPrefab: {fileID: 0}
+  soulPrefab: {fileID: 0}
   movementSmoothing: 0.05
   speed: 5
   hp: 3
+  maxHp: 3
 --- !u!212 &2530534937670641475
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -259,8 +263,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b57ac789aeff846928a3c8887ad406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Aim: {fileID: 0}
-  Dir: 0
   Fireball: {fileID: 512886048263869116, guid: 5ea38af2024aad74db7067b4fd2638bc, type: 3}
   CoolDown: 0.6
   CoolDownTime: 0.6
+--- !u!70 &2328174058104976685
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2530534937670641472}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.2523169}
+  m_Size: {x: 0.6680589, y: 0.8296789}
+  m_Direction: 0
