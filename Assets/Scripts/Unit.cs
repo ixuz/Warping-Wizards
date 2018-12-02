@@ -89,7 +89,7 @@ public class Unit : MonoBehaviour {
 
   }
 
-  void OnDeath() {
+  protected virtual void OnDeath() {
 
     animator.SetBool("dead", true);
     Destroy(GetComponent<Collider2D>());
@@ -99,7 +99,7 @@ public class Unit : MonoBehaviour {
     }
   }
 
-  void OnHit() {
+  protected virtual void OnHit() {
 
     if (hp > 0) {
       CameraShaker.instance.ShakeOnce(0.2f);
