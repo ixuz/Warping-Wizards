@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Projectile
   - AOE
+  - Heart
   layers:
   - Default
   - TransparentFX

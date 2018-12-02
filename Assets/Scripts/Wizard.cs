@@ -21,10 +21,10 @@ public class Wizard : Unit {
     AudioManager.instance.PlaySfx("WizardOnHit");
   }
 
-  void OnTriggerEnter2D(Collider2D other) {
+  /*void OnTriggerEnter2D(Collider2D other) {
     if (other.gameObject.tag == "AOE") {
       OnHit();
       AudioManager.instance.PlaySfx("WizardOnHit");
     }
-  }
+  }*/
 }

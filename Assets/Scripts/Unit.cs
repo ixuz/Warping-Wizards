@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour {
 
+  public GameObject spawnPrefabOnDeath;
   public GameObject deathEffectPrefab;
   public float movementSmoothing = 1.0f;
   public float speed = 2f;
@@ -97,6 +98,9 @@ public class Unit : MonoBehaviour {
     if (deathEffectPrefab) {
       Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
     }
+    if (spawnPrefabOnDeath) {
+      Instantiate(spawnPrefabOnDeath, transform.position, Quaternion.identity);
+    }
   }
 
   protected virtual void OnHit() {
@@ -114,6 +118,12 @@ public class Unit : MonoBehaviour {
     if (collision.collider.gameObject.tag == "Projectile") {
       GameObject projectile = collision.collider.gameObject;
       rb.AddForce(projectile.transform.forward * 2000);
+      OnHit();
+    }
+  }
+
+  void OnTriggerEnter2D(Collider2D other) {
+    if (other.gameObject.tag == "AOE") {
       OnHit();
     }
   }

@@ -114,11 +114,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8042de662199b404893cb587ae796a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnPrefabOnDeath: {fileID: 2746755187338563822, guid: 1e01b4159b81d994b8e3cecae198f315,
+    type: 3}
   deathEffectPrefab: {fileID: 3539488020610134378, guid: cf453d6736517a74e983b71b028d488c,
     type: 3}
   movementSmoothing: 0.05
-  speed: 2
-  hp: 3
+  speed: 5
+  hp: 2
   attack: {fileID: 0}
   attackTrigger: {fileID: 555547728743159191, guid: b0f29696f2ee3f24bbc84e73d7374c65,
     type: 3}

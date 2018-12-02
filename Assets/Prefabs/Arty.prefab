@@ -163,6 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c6977ee182e3f40b8092663a51de2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnPrefabOnDeath: {fileID: 2746755187338563822, guid: 1e01b4159b81d994b8e3cecae198f315,
+    type: 3}
   deathEffectPrefab: {fileID: 0}
   movementSmoothing: 0.05
   speed: 1
@@ -170,4 +172,3 @@ MonoBehaviour:
   attack: {fileID: 0}
   magicPrefab: {fileID: 1178876326230882179, guid: a0f9e230957e6974ca7717a1119bb365,
     type: 3}
-  magicSpawnPoint: {fileID: 0}
