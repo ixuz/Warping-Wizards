@@ -33,7 +33,6 @@ public class Spidum : Unit {
 
   void OnFsmStateChangeEvent(GameObject go, Fsm fsm, string stateName) {
     if (go == gameObject) {
-      Debug.Log("Fsm changed to " + stateName + "!");
 
       switch (stateName) {
         case "Idle":

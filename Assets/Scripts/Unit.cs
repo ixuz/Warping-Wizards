@@ -111,9 +111,8 @@ public class Unit : MonoBehaviour {
   }
 
   public void OnCollisionEnter2D(Collision2D collision) {
-    if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Fireball")) {
+    if (collision.collider.gameObject.tag == "Projectile") {
       GameObject projectile = collision.collider.gameObject;
-
       rb.AddForce(projectile.transform.forward * 2000);
       OnHit();
     }

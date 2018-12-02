@@ -39,9 +39,6 @@ public class shootScript : MonoBehaviour {
     direction.Normalize();
     GameObject fireball = Instantiate(Fireball, transform.position, Quaternion.LookRotation(direction));
 
-    Debug.Log("C1: " + fireball.GetComponent<Collider2D>());
-    Debug.Log("C2: " + GetComponent<Collider2D>());
-
     Physics2D.IgnoreCollision(fireball.GetComponent<Collider2D>(), GetComponent<Collider2D>());
 
     CoolDown = CoolDownTime;
