@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7979810669059201697}
   - component: {fileID: 7267731626804215269}
   - component: {fileID: 4598285038251033203}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Fireball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   m_Component:
   - component: {fileID: 512886048364954864}
   - component: {fileID: 512886048364954865}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 512886048832465741}
   - component: {fileID: 512886048832465743}
   - component: {fileID: 512886048832465742}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: TrailParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4856,7 +4856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3426940506297878343}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Explosion Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}

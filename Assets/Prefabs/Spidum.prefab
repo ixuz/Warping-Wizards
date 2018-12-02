@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1874428521397443929}
   - component: {fileID: 1874428521397443928}
   - component: {fileID: 1709901099}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spidum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,12 +114,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8042de662199b404893cb587ae796a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathEffectPrefab: {fileID: 3539488020610134378, guid: cf453d6736517a74e983b71b028d488c,
+    type: 3}
   movementSmoothing: 0.05
   speed: 2
   hp: 3
   attack: {fileID: 0}
-  deathEffectPrefab: {fileID: 3539488020610134378, guid: cf453d6736517a74e983b71b028d488c,
-    type: 3}
 --- !u!50 &1874428521397443929
 Rigidbody2D:
   serializedVersion: 4
