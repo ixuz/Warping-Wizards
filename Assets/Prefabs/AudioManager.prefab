@@ -174,13 +174,19 @@ MonoBehaviour:
     loop: 0
     audioSource: {fileID: 0}
   - name: SkeletorOnMagic
-    audioClip: {fileID: 8300000, guid: da1d4d5ca2b2cb14389639ae1578f38b, type: 3}
+    audioClip: {fileID: 8300000, guid: 678dd108bd0e8df47b597593c595b1eb, type: 3}
+    volume: 0.43
+    pitch: 0.54
+    loop: 0
+    audioSource: {fileID: 0}
+  - name: WizardOnFire
+    audioClip: {fileID: 8300000, guid: 678dd108bd0e8df47b597593c595b1eb, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     audioSource: {fileID: 0}
-  - name: WizardOnFire
-    audioClip: {fileID: 8300000, guid: 267f5df344f3a8f41b7b3b376a2b8589, type: 3}
+  - name: StartMobSpawners
+    audioClip: {fileID: 8300000, guid: da1d4d5ca2b2cb14389639ae1578f38b, type: 3}
     volume: 1
     pitch: 1
     loop: 0
