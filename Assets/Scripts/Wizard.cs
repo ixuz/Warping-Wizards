@@ -23,8 +23,7 @@ public class Wizard : Unit {
 
   void OnTriggerEnter2D(Collider2D other) {
     if (other.gameObject.tag == "AOE") {
-      hp -= 1;
-      CameraShaker.instance.ShakeOnce(0.2f);
+      OnHit();
       AudioManager.instance.PlaySfx("WizardOnHit");
     }
   }
