@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class MobSpawner : MonoBehaviour {
 
-  public GameObject[] mobPrefabs;
+  public MobSpawn[] mobSpawns;
   public float spawnRate = 1.0f;
 
-  float cooldown = 0.0f;
+    public float artySpawnChance = 10f;
+    public float spidumSpawnChance = 40f;
+    public float skeletorSpawnChance = 40f;
+
+    float cooldown = 0.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -21,10 +25,20 @@ public class MobSpawner : MonoBehaviour {
       cooldown = 1.0f/spawnRate;
       SpawnRandomMob();
     }
-	}
+  }
 
   void SpawnRandomMob() {
-    GameObject mobPrefab = mobPrefabs[Random.Range(0, mobPrefabs.Length)];
+    int mobToSpawn = Random.Range(0, 90);
+    GameObject mobPrefab = mobSpawns[0].mobPrefab;
+
     Instantiate(mobPrefab, transform.position, Quaternion.identity);
   }
+
+    [System.Serializable]
+    public class MobSpawn {
+        public GameObject mobPrefab;
+
+        [Range(0,10)]
+        public int spawnWeight = 1;
+    }
 }
