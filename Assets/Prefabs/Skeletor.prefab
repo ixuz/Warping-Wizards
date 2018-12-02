@@ -155,9 +155,12 @@ MonoBehaviour:
   spawnPrefabOnDeath: {fileID: 2746755187338563822, guid: 1e01b4159b81d994b8e3cecae198f315,
     type: 3}
   deathEffectPrefab: {fileID: 0}
+  soulPrefab: {fileID: 2746755187338563822, guid: 0dae72a3c4d9b30458636dec54e099bf,
+    type: 3}
   movementSmoothing: 0.05
   speed: 1
   hp: 3
+  maxHp: 3
   attack: {fileID: 0}
   magicPrefab: {fileID: 6758012032838442993, guid: 677b3b5e675062744bd0eb48aa869fff,
     type: 3}

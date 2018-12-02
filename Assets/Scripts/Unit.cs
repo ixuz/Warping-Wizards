@@ -6,9 +6,11 @@ public class Unit : MonoBehaviour {
 
   public GameObject spawnPrefabOnDeath;
   public GameObject deathEffectPrefab;
+  public GameObject soulPrefab;
   public float movementSmoothing = 1.0f;
   public float speed = 2f;
   public int hp = 3;
+  public int maxHp = 3;
 
   protected Animator animator;
   protected Rigidbody2D rb;
@@ -100,6 +102,9 @@ public class Unit : MonoBehaviour {
     }
     if (spawnPrefabOnDeath) {
       Instantiate(spawnPrefabOnDeath, transform.position, Quaternion.identity);
+    }
+    if (soulPrefab) {
+      Instantiate(soulPrefab, transform.position, Quaternion.identity);
     }
   }
 

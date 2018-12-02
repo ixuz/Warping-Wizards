@@ -24,13 +24,17 @@ public class Wizard : Unit {
   public override void OnTriggerEnter2D(Collider2D collider) {
     base.OnTriggerEnter2D(collider);
 
-    Debug.Log("Wizard collided with:" + collider.gameObject.name);
     if (collider.gameObject.tag == "Heart") {
       if (hp < 3) {
         hp += 1;
       }
 
       AudioManager.instance.PlaySfx("WizardOnHeal");
+    }
+    if (collider.gameObject.tag == "Soul") {
+      ArenaState.instance.souls++;
+      
+      AudioManager.instance.PlaySfx("WizardOnSoul");
     }
   }
 }

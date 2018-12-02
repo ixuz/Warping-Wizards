@@ -8,6 +8,7 @@ TagManager:
   - AOE
   - Heart
   - Mob
+  - Soul
   layers:
   - Default
   - TransparentFX
