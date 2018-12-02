@@ -191,4 +191,10 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     audioSource: {fileID: 0}
+  - name: WizardOnHeal
+    audioClip: {fileID: 8300000, guid: 562981e1f327e314987509e0396d6516, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioSource: {fileID: 0}
   initialBgm: 

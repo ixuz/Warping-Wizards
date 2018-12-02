@@ -21,10 +21,16 @@ public class Wizard : Unit {
     AudioManager.instance.PlaySfx("WizardOnHit");
   }
 
-  /*void OnTriggerEnter2D(Collider2D other) {
-    if (other.gameObject.tag == "AOE") {
-      OnHit();
-      AudioManager.instance.PlaySfx("WizardOnHit");
+  public override void OnTriggerEnter2D(Collider2D collider) {
+    base.OnTriggerEnter2D(collider);
+
+    Debug.Log("Wizard collided with:" + collider.gameObject.name);
+    if (collider.gameObject.tag == "Heart") {
+      if (hp < 3) {
+        hp += 1;
+      }
+
+      AudioManager.instance.PlaySfx("WizardOnHeal");
     }
-  }*/
+  }
 }
