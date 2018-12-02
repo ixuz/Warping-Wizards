@@ -28,17 +28,42 @@ public class MobSpawner : MonoBehaviour {
   }
 
   void SpawnRandomMob() {
-    int mobToSpawn = Random.Range(0, 90);
-    GameObject mobPrefab = mobSpawns[0].mobPrefab;
 
-    Instantiate(mobPrefab, transform.position, Quaternion.identity);
+
+    Debug.Log("Spawning random mob");
+    // (8, 8, 2) = 18
+    // 0-7 = index 0
+    // 8-15 = index 1
+    // 16-17 = index 2
+
+    int totalWeight = 0;
+    foreach (MobSpawn mobSpawn in mobSpawns) {
+      totalWeight += mobSpawn.spawnWeight;
+    }
+    Debug.Log("Total weight: " + totalWeight);
+
+    int mobToSpawn = Random.Range(0, totalWeight);
+
+    GameObject mobPrefab = null;
+    foreach (MobSpawn mobSpawn in mobSpawns) {
+      mobToSpawn -= mobSpawn.spawnWeight;
+      if (mobToSpawn < 0) {
+        mobPrefab = mobSpawn.mobPrefab;
+        break;
+      }
+    }
+    Debug.Log("mobPrefab: " + mobPrefab);
+
+    if (mobPrefab != null) {
+      Instantiate(mobPrefab, transform.position, Quaternion.identity);
+    }
   }
 
     [System.Serializable]
     public class MobSpawn {
         public GameObject mobPrefab;
 
-        [Range(0,10)]
+        [Range(1,10)]
         public int spawnWeight = 1;
     }
 }
