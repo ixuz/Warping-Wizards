@@ -41,11 +41,18 @@ public class Spidum : Unit {
         case "Run":
           break;
         case "Spin":
+          AudioManager.instance.PlaySfx("SpidumOnSpin");
           SetFollow(null);
           break;
         
       }
     }
+  }
+
+  protected override void OnHit() {
+    base.OnHit();
+
+    AudioManager.instance.PlaySfx("SpidumOnHit");
   }
 
   protected override void OnEnable() {

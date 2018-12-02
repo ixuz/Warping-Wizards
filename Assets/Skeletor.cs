@@ -45,9 +45,14 @@ public class Skeletor : Unit {
           SetFollow(null);
           StartCoroutine(delayedMagicSpawn());
           break;
-        
       }
     }
+  }
+
+  protected override void OnHit() {
+    base.OnHit();
+
+    AudioManager.instance.PlaySfx("SkeletorOnHit");
   }
 
   protected override void OnEnable() {
@@ -72,6 +77,7 @@ public class Skeletor : Unit {
       if (magicPrefab) {
         GameObject projective = Instantiate(magicPrefab, magicSpawnPoint.position, Quaternion.LookRotation(direction));
         Physics2D.IgnoreCollision(projective.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        AudioManager.instance.PlaySfx("SkeletorOnMagic");
       }
     }
     yield return null;

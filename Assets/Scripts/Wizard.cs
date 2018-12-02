@@ -14,4 +14,10 @@ public class Wizard : Unit {
     UpdateVelocity();
     UpdateAnimator();
   }
+
+  protected override void OnHit() {
+    base.OnHit();
+
+    AudioManager.instance.PlaySfx("WizardOnHit");
+  }
 }
