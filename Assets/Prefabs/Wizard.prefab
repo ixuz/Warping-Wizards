@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2530534937670641474}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4517959472094100226
 SpriteRenderer:
@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 2530534937670641475}
   - component: {fileID: 739435229685330279}
   - component: {fileID: 432042656}
+  - component: {fileID: 3577582873684595869}
   m_Layer: 0
   m_Name: Wizard
   m_TagString: Player
@@ -111,7 +112,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5084882931208668267}
   - {fileID: 4097427327659566714}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -247,50 +247,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b48d1a98f8602474993c7330f1780397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &6345107993453375512
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5084882931208668267}
-  - component: {fileID: 8260777921596924525}
-  m_Layer: 0
-  m_Name: Aim
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5084882931208668267
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6345107993453375512}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2530534937670641474}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8260777921596924525
+--- !u!114 &3577582873684595869
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6345107993453375512}
+  m_GameObject: {fileID: 2530534937670641472}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0b57ac789aeff846928a3c8887ad406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Aim: {fileID: 5084882931208668267}
+  Aim: {fileID: 0}
   Dir: 0
   Fireball: {fileID: 512886048263869116, guid: 5ea38af2024aad74db7067b4fd2638bc, type: 3}
   CoolDown: 0.6

@@ -70,7 +70,8 @@ public class Skeletor : Unit {
 
     if (hp > 0) {
       if (magicPrefab) {
-        Instantiate(magicPrefab, magicSpawnPoint.position, Quaternion.LookRotation(direction));
+        GameObject projective = Instantiate(magicPrefab, magicSpawnPoint.position, Quaternion.LookRotation(direction));
+        Physics2D.IgnoreCollision(projective.GetComponent<Collider2D>(), GetComponent<Collider2D>());
       }
     }
     yield return null;

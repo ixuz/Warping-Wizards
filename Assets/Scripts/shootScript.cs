@@ -4,44 +4,48 @@ using UnityEngine;
 
 public class shootScript : MonoBehaviour {
 
-    public Transform Aim;
-    public int Dir;
-    public GameObject Fireball;
-    Vector2 direction;
+  public GameObject Fireball;
+  Vector2 direction;
 
-    public float CoolDown;
-    public float CoolDownTime;
+  public float CoolDown;
+  public float CoolDownTime;
 
-    private void Start()
+  private void Start()
+  {
+      CoolDown = CoolDownTime;
+  }
+
+  void Update()
+  {
+
+
+    if (Input.GetKeyDown(KeyCode.Mouse0) && CoolDown < 0)
     {
-        CoolDown = CoolDownTime;
+        fire();
     }
+    CoolDown = CoolDown - Time.deltaTime;
 
-    void Update()
-    {
+  }
 
+  public void fire()
+  {
+    // mouse pos
+    Vector3 mousePos = Input.mousePosition;
+    mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+    mousePos.z = 0;
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && CoolDown < 0)
-        {
-            fire();
-        }
-        CoolDown = CoolDown - Time.deltaTime;
+    // position
+    direction = mousePos - transform.position;
+    direction.Normalize();
+    GameObject fireball = Instantiate(Fireball, transform.position, Quaternion.LookRotation(direction));
 
-    }
+    Debug.Log("C1: " + fireball.GetComponent<Collider2D>());
+    Debug.Log("C2: " + GetComponent<Collider2D>());
 
-    public void fire()
-    {
-        // mouse pos
-        Vector3 mousePos = Input.mousePosition;
-        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-        mousePos.z = 0;
+    Physics2D.IgnoreCollision(fireball.GetComponent<Collider2D>(), GetComponent<Collider2D>());
 
-        // position
-        direction = mousePos - Aim.position;
-        direction.Normalize();
-        Instantiate(Fireball, Aim.position, Quaternion.LookRotation(direction));
-        CoolDown = CoolDownTime;
+    CoolDown = CoolDownTime;
 
-        CameraShaker.instance.ShakeOnce(0.2f);
-    }
+    CameraShaker.instance.ShakeOnce(0.2f);
+  }
 }
