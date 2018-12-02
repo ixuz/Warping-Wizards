@@ -7,7 +7,6 @@ public class Arty : Unit {
 
   public GameObject attack;
   public GameObject magicPrefab;
-  public Transform magicSpawnPoint;
 
   void Start() {
 
@@ -68,16 +67,13 @@ public class Arty : Unit {
   IEnumerator delayedMagicSpawn() {
     yield return new WaitForSeconds(0.5f);
 
-    // mouse pos
-    // position
-    Vector2 direction = attack.transform.position - magicSpawnPoint.position;
-    direction.Normalize();
-
     if (hp > 0) {
       if (magicPrefab) {
-        GameObject projective = Instantiate(magicPrefab, magicSpawnPoint.position, Quaternion.LookRotation(direction));
-        Physics2D.IgnoreCollision(projective.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-        AudioManager.instance.PlaySfx("SkeletorOnMagic");
+        if (attack) {
+          GameObject projective = Instantiate(magicPrefab, attack.transform.position, Quaternion.identity);
+          Physics2D.IgnoreCollision(projective.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+          AudioManager.instance.PlaySfx("SkeletorOnMagic");
+        }
       }
     }
     yield return null;
