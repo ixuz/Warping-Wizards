@@ -54,6 +54,7 @@ MonoBehaviour:
       type: 3}
     spawnWeight: 2
   spawnRate: 0.2
+  spawnRateDifficultyIncrease: 0.1
   artySpawnChance: 10
   spidumSpawnChance: 40
   skeletorSpawnChance: 40

@@ -6,6 +6,7 @@ public class MobSpawner : MonoBehaviour {
 
   public MobSpawn[] mobSpawns;
   public float spawnRate = 1.0f;
+  public float spawnRateDifficultyIncrease = 0.1f;
 
     public float artySpawnChance = 10f;
     public float spidumSpawnChance = 40f;
@@ -15,14 +16,14 @@ public class MobSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-    cooldown = 1.0f / spawnRate;
+    cooldown = 1.0f / (spawnRate + spawnRateDifficultyIncrease * State.instance.difficultyLevel);
   }
 	
 	// Update is called once per frame
 	void Update () {
     cooldown -= Time.deltaTime;
     if (cooldown <= 0) {
-      cooldown = 1.0f/spawnRate;
+      cooldown = 1.0f / (spawnRate + spawnRateDifficultyIncrease * State.instance.difficultyLevel);
       SpawnRandomMob();
     }
   }

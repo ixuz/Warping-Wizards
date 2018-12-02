@@ -114,7 +114,7 @@ public class Unit : MonoBehaviour {
     }
   }
 
-  public void OnCollisionEnter2D(Collision2D collision) {
+  public virtual void OnCollisionEnter2D(Collision2D collision) {
     if (collision.collider.gameObject.tag == "Projectile") {
       GameObject projectile = collision.collider.gameObject;
       rb.AddForce(projectile.transform.forward * 2000);
@@ -122,7 +122,7 @@ public class Unit : MonoBehaviour {
     }
   }
 
-  void OnTriggerEnter2D(Collider2D other) {
+  public virtual void OnTriggerEnter2D(Collider2D other) {
     if (other.gameObject.tag == "AOE") {
       OnHit();
     }
