@@ -176,6 +176,8 @@ MonoBehaviour:
   speed: 5
   hp: 3
   maxHp: 3
+  ghostPrefab: {fileID: 5243758883612897461, guid: 41850545dd7a04c4f921ec98790da762,
+    type: 3}
 --- !u!212 &2530534937670641475
 SpriteRenderer:
   m_ObjectHideFlags: 0
