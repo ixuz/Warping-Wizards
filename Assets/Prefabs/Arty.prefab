@@ -169,7 +169,7 @@ MonoBehaviour:
   soulPrefab: {fileID: 2746755187338563822, guid: 0dae72a3c4d9b30458636dec54e099bf,
     type: 3}
   movementSmoothing: 0.05
-  speed: 1
+  speed: 1.5
   hp: 3
   maxHp: 3
   attack: {fileID: 0}

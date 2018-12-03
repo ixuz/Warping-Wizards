@@ -53,7 +53,7 @@ public class Spidum : Unit {
 
   protected override void OnHit() {
     base.OnHit();
-
+        
     AudioManager.instance.PlaySfx("SpidumOnHit");
   }
 
