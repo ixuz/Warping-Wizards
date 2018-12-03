@@ -15,8 +15,13 @@ public class GreenCirkle : MonoBehaviour {
             Instantiate(BloodExplosion, transform.position, transform.rotation);
 
       //SceneManager.LoadScene("VictoryScene");
-      FadeScreen.instance.LoadScene("VictoryScene");
+      StartCoroutine(delayedLoad());
         }
     }
+
+  IEnumerator delayedLoad() {
+    yield return new WaitForSeconds(0.5f);
+    FadeScreen.instance.LoadScene("VictoryScene");
+  }
 
 }
