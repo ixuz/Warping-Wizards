@@ -9,6 +9,7 @@ TextureImporter:
     21300008: Menu_4
     21300010: Menu_5
     21300012: Menu_6
+    21300014: Menu_7
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -252,13 +253,33 @@ TextureImporter:
         width: 58
         height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 3675ad73cb1882d4cac506cce47ae0b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_7
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 304
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1d7d59f975274439d45a3c8e7f271b
       vertices: []
       indices: 
       edges: []

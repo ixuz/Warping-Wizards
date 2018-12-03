@@ -35,11 +35,22 @@ public class FadeScreen : MonoBehaviour {
         StartCoroutine(TransitionToScene(sceneName));
     }
 
+  public void QuitApp() {
+
+    StartCoroutine(TransitionToQuit());
+  }
+
     IEnumerator TransitionToScene(string sceneName) {
         FadeOut();
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(sceneName);
         yield return new WaitForSeconds(0.25f);
         FadeIn();
-    }
+  }
+
+  IEnumerator TransitionToQuit() {
+    FadeOut();
+    yield return new WaitForSeconds(1);
+    Application.Quit();
+  }
 }
