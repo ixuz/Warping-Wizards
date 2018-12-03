@@ -1404,6 +1404,7 @@ GameObject:
   - component: {fileID: 665051706}
   - component: {fileID: 665051705}
   - component: {fileID: 665051704}
+  - component: {fileID: 665051707}
   m_Layer: 0
   m_Name: SouldDoor
   m_TagString: Untagged
@@ -1498,6 +1499,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &665051707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665051703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d470817f389bcc24ba1f6329b7e3f35b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &670196391
 GameObject:
   m_ObjectHideFlags: 0
