@@ -59,6 +59,7 @@ public class Wizard : Unit {
       ArenaState.instance.souls++;
       
       AudioManager.instance.PlaySfx("WizardOnSoul");
+      Debug.Log("Collected soul:" + collider.gameObject.GetInstanceID());
     }
   }
 }
