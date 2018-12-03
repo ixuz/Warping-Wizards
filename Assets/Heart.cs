@@ -37,7 +37,7 @@ public class Heart : MonoBehaviour {
 
   public void OnCollisionEnter2D(Collision2D collision) {
     if (collision.collider.gameObject.tag == "Player") {
-      Destroy(gameObject);
+            Destroy(gameObject);
     }
   }
 
