@@ -11,7 +11,6 @@ public class FireballScript : MonoBehaviour {
 
   private void Start()
   {
-    EZCameraShake.CameraShaker.Instance.ShakeOnce(1.0f, 15.2f, 0.1f, 0.5f);
     Destroy(ThisObject.gameObject, 5);
   }
   void Update()
