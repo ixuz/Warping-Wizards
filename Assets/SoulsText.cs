@@ -14,7 +14,7 @@ public class SoulsText : MonoBehaviour {
       text.text = "The Gate is open! Escape!";
     } else {
       int moreSouls = (50 + 25 * State.instance.difficultyLevel) - ArenaState.instance.souls;
-      text.text = "Collect " + ArenaState.instance.souls + " more souls to open the Gate!";
+      text.text = "Collect " + moreSouls + " more souls to open the Gate!";
     }
 
   }
