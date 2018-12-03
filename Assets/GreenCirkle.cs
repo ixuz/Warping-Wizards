@@ -13,8 +13,9 @@ public class GreenCirkle : MonoBehaviour {
         {
             AudioManager.instance.PlaySfx("StartMobSpawners");
             Instantiate(BloodExplosion, transform.position, transform.rotation);
-            
-            SceneManager.LoadScene("VictoryScene");
+
+      //SceneManager.LoadScene("VictoryScene");
+      FadeScreen.instance.LoadScene("VictoryScene");
         }
     }
 

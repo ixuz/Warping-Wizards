@@ -7,12 +7,13 @@ public class SceneLoader : MonoBehaviour {
 
   public void LoadScene(string sceneName) {
 
-    StartCoroutine(delayedLoad(sceneName));
+    FadeScreen.instance.LoadScene(sceneName);
+    //StartCoroutine(delayedLoad(sceneName));
   }
 
   IEnumerator delayedLoad(string sceneName) {
     yield return new WaitForSeconds(0.5f);
-    SceneManager.LoadScene(sceneName);
+    //SceneManager.LoadScene(sceneName);
     yield return null;
   }
 }

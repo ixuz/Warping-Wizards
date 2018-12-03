@@ -34,6 +34,16 @@ public class Wizard : Unit {
 
   }
 
+  protected override void OnDeath() {
+    base.OnDeath();
+    StartCoroutine(delayedReloadScene());
+  }
+
+  IEnumerator delayedReloadScene() {
+    yield return new WaitForSeconds(2.0f);
+    FadeScreen.instance.LoadScene("TheArena");
+  }
+
   protected override void OnHit() {
     base.OnHit();
 

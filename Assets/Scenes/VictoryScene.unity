@@ -7732,3 +7732,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6f52377d622fb140b5a8d8ae209023d, type: 3}
+--- !u!1001 &1841120063
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5633754095252171379, guid: 9002790721273594bb002083e5379d39,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.511744
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633754095252171379, guid: 9002790721273594bb002083e5379d39,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.2906055
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633754095252171379, guid: 9002790721273594bb002083e5379d39,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.7377762
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633754095252171379, guid: 9002790721273594bb002083e5379d39,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633754095252171379, guid: 9002790721273594bb002083e5379d39,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633754095252171379, guid: 9002790721273594bb002083e5379d39,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633754095252171379, guid: 9002790721273594bb002083e5379d39,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633754095252171379, guid: 9002790721273594bb002083e5379d39,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633754095252171379, guid: 9002790721273594bb002083e5379d39,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633754095252171379, guid: 9002790721273594bb002083e5379d39,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633754095252171379, guid: 9002790721273594bb002083e5379d39,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633754095252171381, guid: 9002790721273594bb002083e5379d39,
+        type: 3}
+      propertyPath: m_Name
+      value: FadeScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098737369, guid: 9002790721273594bb002083e5379d39, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9002790721273594bb002083e5379d39, type: 3}
