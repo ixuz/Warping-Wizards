@@ -8,12 +8,15 @@ public class StartTrigger : MonoBehaviour {
     public Transform Spawnpoint2;
     public GameObject MobSpawner;
 
+    public bool triggered = false;
+
     public GameObject BloodExplosion;
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && triggered != true)
         {
+            triggered = true;
             AudioManager.instance.PlaySfx("StartMobSpawners");
 
             Instantiate(MobSpawner, Spawnpoint1.position, Spawnpoint1.rotation);

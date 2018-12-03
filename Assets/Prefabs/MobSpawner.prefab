@@ -46,10 +46,10 @@ MonoBehaviour:
   mobSpawns:
   - mobPrefab: {fileID: 1874428521397443927, guid: 40b060d93ac3f2d4e81f1622c91d19a8,
       type: 3}
-    spawnWeight: 8
+    spawnWeight: 6
   - mobPrefab: {fileID: 3213887431392983330, guid: de0691dc27ce97948a332bd7cfd94f57,
       type: 3}
-    spawnWeight: 8
+    spawnWeight: 2
   - mobPrefab: {fileID: 1700490325750420003, guid: 77e51e31ca4b78b458b697cc50f43669,
       type: 3}
     spawnWeight: 2
