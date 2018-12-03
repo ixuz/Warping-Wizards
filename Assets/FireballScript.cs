@@ -11,6 +11,7 @@ public class FireballScript : MonoBehaviour {
 
   private void Start()
   {
+    EZCameraShake.CameraShaker.Instance.ShakeOnce(1.0f, 15.2f, 0.1f, 0.5f);
     Destroy(ThisObject.gameObject, 5);
   }
   void Update()
@@ -23,5 +24,6 @@ public class FireballScript : MonoBehaviour {
     Instantiate(Explode, SpawnPoint.position, SpawnPoint.rotation);
     Destroy(ThisObject, 0);
     AudioManager.instance.PlaySfx("FireballDestroyed");
+    EZCameraShake.CameraShaker.Instance.ShakeOnce(1.0f, 15.2f, 0.1f, 0.5f);
   }
 }

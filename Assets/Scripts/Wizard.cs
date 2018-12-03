@@ -38,6 +38,7 @@ public class Wizard : Unit {
     base.OnHit();
 
     AudioManager.instance.PlaySfx("WizardOnHit");
+    EZCameraShake.CameraShaker.Instance.ShakeOnce(1.0f, 15.2f, 0.1f, 0.5f);
   }
 
   public override void OnTriggerEnter2D(Collider2D collider) {

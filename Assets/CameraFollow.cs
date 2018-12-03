@@ -19,6 +19,6 @@ public class CameraFollow : MonoBehaviour {
     mousePos.z = transform.position.z;
     followPos.z = transform.position.z;
 
-    transform.position = Vector3.Lerp(followPos, mousePos, 0.2f);
+    transform.position = Vector3.Lerp(followPos, mousePos, 0.1f);
   }
 }

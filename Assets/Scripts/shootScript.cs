@@ -29,6 +29,7 @@ public class shootScript : MonoBehaviour {
 
   public void fire()
   {
+    EZCameraShake.CameraShaker.Instance.ShakeOnce(1.0f, 15.2f, 0.1f, 0.5f);
     // mouse pos
     Vector3 mousePos = Input.mousePosition;
     mousePos = Camera.main.ScreenToWorldPoint(mousePos);
