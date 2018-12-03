@@ -137,4 +137,8 @@ public class Unit : MonoBehaviour {
   protected virtual void OnDisable() {
     Fsm.OnFsmStateChangeEvent -= OnFsmStateChangeEvent;
   }
+
+  public bool isDead() {
+    return animator.GetBool("dead");
+  }
 }

@@ -39,6 +39,10 @@ public class Wizard : Unit {
     StartCoroutine(delayedReloadScene());
   }
 
+  public void killShadow() {
+    Destroy(activeGhost);
+  }
+
   IEnumerator delayedReloadScene() {
     yield return new WaitForSeconds(2.0f);
     FadeScreen.instance.LoadScene("TheArena");

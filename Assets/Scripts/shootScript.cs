@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class shootScript : MonoBehaviour {
 
+  public Unit player;
   public GameObject Fireball;
   Vector2 direction;
 
@@ -19,7 +20,7 @@ public class shootScript : MonoBehaviour {
   {
 
 
-    if (Input.GetKeyDown(KeyCode.Mouse0) && CoolDown < 0)
+    if (Input.GetKeyDown(KeyCode.Mouse0) && CoolDown < 0 && !player.isDead())
     {
         fire();
     }
