@@ -106,6 +106,8 @@ public class Unit : MonoBehaviour {
     if (soulPrefab) {
       Instantiate(soulPrefab, transform.position + new Vector3(Random.Range(-0.25f, 0.25f), Random.Range(-0.25f, 0.25f)), Quaternion.identity);
     }
+
+    Destroy(gameObject, 15f);
   }
 
   protected virtual void OnHit() {
