@@ -264,8 +264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fireball: {fileID: 512886048263869116, guid: 5ea38af2024aad74db7067b4fd2638bc, type: 3}
-  CoolDown: 0.6
-  CoolDownTime: 0.6
+  CoolDown: 0.5
+  CoolDownTime: 0.5
 --- !u!70 &2328174058104976685
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

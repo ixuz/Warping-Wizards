@@ -159,7 +159,7 @@ MonoBehaviour:
     type: 3}
   movementSmoothing: 0.05
   speed: 1
-  hp: 3
+  hp: 2
   maxHp: 3
   attack: {fileID: 0}
   magicPrefab: {fileID: 6758012032838442993, guid: 677b3b5e675062744bd0eb48aa869fff,
