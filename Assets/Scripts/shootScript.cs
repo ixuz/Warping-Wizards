@@ -43,8 +43,6 @@ public class shootScript : MonoBehaviour {
 
     CoolDown = CoolDownTime;
 
-    CameraShaker.instance.ShakeOnce(0.2f);
-
     AudioManager.instance.PlaySfx("WizardOnFire");
   }
 }

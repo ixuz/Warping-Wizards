@@ -5,6 +5,8 @@ using System.Linq;
 
 public class Wizard : Unit {
 
+  public GameObject mainCamera;
+  public GameObject virtualCamera;
   public GameObject ghostPrefab;
   public GameObject activeGhost = null;
 
@@ -26,6 +28,10 @@ public class Wizard : Unit {
     SetInput(input);
     UpdateVelocity();
     UpdateAnimator();
+  }
+
+  void disableLookAhead() {
+
   }
 
   protected override void OnHit() {

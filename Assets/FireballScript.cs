@@ -22,7 +22,6 @@ public class FireballScript : MonoBehaviour {
   {
     Instantiate(Explode, SpawnPoint.position, SpawnPoint.rotation);
     Destroy(ThisObject, 0);
-    CameraShaker.instance.ShakeOnce(0.2f);
     AudioManager.instance.PlaySfx("FireballDestroyed");
   }
 }

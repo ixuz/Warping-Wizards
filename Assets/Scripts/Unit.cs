@@ -111,7 +111,6 @@ public class Unit : MonoBehaviour {
   protected virtual void OnHit() {
 
     if (hp > 0) {
-      CameraShaker.instance.ShakeOnce(0.2f);
       hp -= 1;
       if (hp <= 0) {
         OnDeath();
