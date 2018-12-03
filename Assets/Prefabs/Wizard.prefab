@@ -176,8 +176,11 @@ MonoBehaviour:
   speed: 5
   hp: 3
   maxHp: 3
+  mainCamera: {fileID: 0}
+  virtualCamera: {fileID: 0}
   ghostPrefab: {fileID: 5243758883612897461, guid: 41850545dd7a04c4f921ec98790da762,
     type: 3}
+  activeGhost: {fileID: 0}
 --- !u!212 &2530534937670641475
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -266,8 +269,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fireball: {fileID: 512886048263869116, guid: 5ea38af2024aad74db7067b4fd2638bc, type: 3}
-  CoolDown: 0.5
-  CoolDownTime: 0.5
+  CoolDown: 0.65
+  CoolDownTime: 0.65
 --- !u!70 &2328174058104976685
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

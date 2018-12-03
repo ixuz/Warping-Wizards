@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GreenCirkle : MonoBehaviour {
 
@@ -12,6 +13,8 @@ public class GreenCirkle : MonoBehaviour {
         {
             AudioManager.instance.PlaySfx("StartMobSpawners");
             Instantiate(BloodExplosion, transform.position, transform.rotation);
+            
+            SceneManager.LoadScene("VictoryScene");
         }
     }
 
