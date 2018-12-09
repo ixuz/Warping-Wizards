@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
 
-  public Transform followObject;
+  public GameObject followObject;
 
 	// Use this for initialization
 	void Start () {
